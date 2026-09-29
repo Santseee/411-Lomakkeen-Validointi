@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröitymislomake</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+
+    <h1>Rekisteröitymislomake</h1>
+
+    <h3>Siirry kentästä toiseen tab-näppäimellä.</h3>
+
+    <form id="form">
+
+        <div class="form-group">
+            <label for="userId">Käyttäjä ID:</label>
+            <input id="userId" type="text" required>
+            <span id="userIdError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Salasana:</label>
+            <input id="password" type="password" required>
+            <span id="passwordError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Nimi:</label>
+            <input id="name" type="text" required>
+            <span id="nameError" class="error"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label for="address">Osoite:</label>
+            <input id="address" type="text" required>
+            <span id="addressError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Maa:</label>
+
+            <select id="country">
+                <option value="">(Valitse maa)</option>
+                <option value="finland">Suomi</option>
+                <option value="sweden">Ruotsi</option>
+                <option value="norway">Norja</option>
+                <option value="denmark">Tanska</option>
+                <option value="muu">Kirjota lisätietoihin kotimaasi</option>
+            </select>
+
+            <span id="countryError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="postalCode">Postinumero:</label>
+            <input id="postalCode" type="text" required>
+            <span id="postalCodeError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Sähköposti:</label>
+            <input id="email" type="text" required>
+            <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Sukupuoli:</label>
+
+            <input id="male" name="gender" type="radio">
+            <label for="male">Mies</label>
+
+            <input id="female" name="gender" type="radio">
+            <label for="female">Nainen</label>
+
+            <span id="genderError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Kieli:</label>
+
+            <input id="finnish" type="checkbox">
+            <label for="finnish">Suomi</label>
+
+            <input id="otherLanguage" type="checkbox">
+            <label for="otherLanguage">Muu kuin suomi</label>
+
+            <span id="languageError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="additionalInfo">Lisätietoja:</label>
+
+            <textarea id="additionalInfo"></textarea>
+        </div>
+
+        <button type="submit">Lähetä</button>
+
+        <div id="success"></div>
+
+    </form>
+
+</body>
+</html>

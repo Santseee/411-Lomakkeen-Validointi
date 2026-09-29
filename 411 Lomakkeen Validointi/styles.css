@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 700px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group > label:first-child {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    padding: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+textarea {
+    width: 350px;
+    height: 120px;
+    vertical-align: top;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    display: block;
+    margin-left: 165px;
+    margin-top: 3px;
+}
+
+#success {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
